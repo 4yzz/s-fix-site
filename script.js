@@ -1,0 +1,2 @@
+function handleContact(e){e.preventDefault();const d=new FormData(e.target);const n=d.get('name');const em=d.get('email');const m=d.get('message');const subject=encodeURIComponent('S Fix Contact: '+n);const body=encodeURIComponent(m+'\n\nFrom: '+n+' <'+em+'>');location.href='mailto:info@sfix.example?subject='+subject+'&body='+body;return false;}
+document.getElementById('year').textContent=new Date().getFullYear();
