@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>S Fix • Workwear & Embroidery</title>
   <meta name="description" content="S Fix: Professional workwear, logo embroidery and design." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav">
-      <h1 class="brand">S Fix</h1>
+      <a class="brand" href="#hero">
+        <img class="brand-logo" src="assets/logo.png" alt="S Fix logo">
+        <span>S Fix</span>
+      </a>
       <nav>
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -19,14 +25,17 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <section id="hero" class="hero">
     <div class="container">
+      <img src="assets/logo.png" alt="S Fix" style="max-height:80px;width:auto;display:block;margin:0 auto 12px;">
       <h2>Professional <span class="accent">Workwear</span> & Embroidery</h2>
       <p>High-quality uniforms, logo embroidery and custom design for your business.</p>
       <a class="btn" href="#contact">Get a Quote</a>
     </div>
   </section>
 
+  <!-- Services -->
   <section id="services" class="section">
     <div class="container">
       <h2>Our Services</h2>
@@ -38,31 +47,10 @@
     </div>
   </section>
 
+  <!-- About -->
   <section id="about" class="section alt">
     <div class="container">
       <h2>About S Fix</h2>
       <p>We deliver custom solutions for businesses that need reliable branded workwear.</p>
     </div>
   </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <form class="contact-form" onsubmit="return handleContact(event)">
-        <label>Name <input required name="name" /></label>
-        <label>Email <input required type="email" name="email" /></label>
-        <label>Message <textarea required name="message" rows="5"></textarea></label>
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> S Fix</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
